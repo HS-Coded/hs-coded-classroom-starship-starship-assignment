@@ -1,0 +1,23 @@
+{
+  "image": "ghcr.io/hellowhorl/world:0.1.2",
+  "runArgs": ["--privileged"],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "bierner.markdown-checkbox"
+      ],
+      "settings": {
+        "files.exclude": {
+          "**/.**": true,
+          "**/__**": true
+        }
+      }
+    }
+  },
+  "containerEnv": {
+    "API_URL": "https://api.chompe.rs",
+    "API_PORT": "443"
+  },
+  "postCreateCommand": "sudo mount -a"
+}
