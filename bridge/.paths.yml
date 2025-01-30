@@ -1,7 +1,58 @@
-0:
-    0:
-        - "🚀 LIFTOFF! 🚀"
-1:
-    0:
+#############
+# Controls  #
+#############
+
+rocket:
+    fail:
+        - "⛔ Nothing happens."
+        - ""
         - The ship...doesn't seem to be going anywhere. Check
         - and see if the engine started?
+    success:
+        - "🚀 Liftoff!"
+        - ""
+        - The ship begins to smoothly accelerate in the way that
+        - only starships can. The stars begin to rush by.
+        - ""
+        - But suddenly, the ship's engines cut out and the control
+        - panel goes dark. The rest of the ship's power seems to be
+        - on, but it would appear that there are some quirks that
+        - the person you got this ship from didn't tell you about.
+        - ""
+        - Looking at the console, you notice some smoke coming from
+        - behind a small door below the controls. You try to pry it
+        - open using a small gap surrounding the door, but it doesn't
+        - budge.
+        - ""
+        - There's a keypad next to the door. You press a few buttons,
+        - but it's clearly broken. You are overwhelmed with the feeling
+        - that, even though you don't know anything about starships,
+        - you could fix it.
+        - ""
+
+##########
+# Keypad #
+##########
+keypad:
+    info:
+        - "🔢 Cracking the code"
+        - ""
+        - "The side of the keypad features a handwritten label:"
+        - " * Take code input and verify by:"
+        - "   * Multiplying by 3"
+        - "   * Adding 6"
+        - "   * Dividing by 3"
+        - "   * Subtracting the original input"
+        - ""
+        - "Yeah, you can do this. You're sure."
+    fail:
+        - "⛔ That didn't work."
+        - ""
+        - The noise the Keypad makes isn't encouraging. Have a
+        - look and try again?
+    success:
+        - "✅ Success!"
+        - ""
+        - "A mystical click and hiss: just another of those magical"
+        - starship sounds. Looking around, the door you tried to
+        - force open earlier looks unlocked!

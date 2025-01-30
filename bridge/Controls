@@ -3,14 +3,26 @@
 import os
 import sys
 import narrator
+import gitit
 
 from narrator import Checkpoint
 
 n = narrator.Narrator()
-
+n.path.change({
+    "act": "rocket",
+    "scene": "fail"
+})
 if Checkpoint.check_flag("engine_started"):
-    n.narrate()
+    n.path.change({
+        "act": "rocket",
+        "scene": "success"
+    })
     Checkpoint.set_flag("liftoff")
-    sys.exit(0)
+    if not os.path.exists("Keypad.py"):
+        gitit.get(
+            "https://cdn.githubraw.com/hellowhorl/whorl-objects/main/",
+            "space-junk",
+            "Keypad.py"
+        )
 
-print("The ship...doesn't seem to be going anywhere.")
+n.narrate()

@@ -31,4 +31,4 @@ jobs:
           sudo python -m pip install yq
       - name: Check startship progress
         run: |
-            gatorgrade --config .gatorgrader.yml
+            gatorgrade --config .gatorgrade.yml
