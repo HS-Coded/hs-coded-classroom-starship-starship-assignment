@@ -69,6 +69,6 @@ Looking at the `Keypad`, there's a sticker on the side that seems to apply in ca
 Take code input and verify by:
 - Multiplying by 3
 - Adding 6
-- Dividing by 3"
-- Subtracting the original input"
+- Dividing by 3
+- Subtracting the original input
 ```
